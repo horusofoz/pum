@@ -79,6 +79,11 @@ main {
   grid-column: span 2;
 }
 
+.heading {
+  font-size: large;
+  font-weight: bold;
+}
+
 .nav-bar {
   bottom: 0;
   display: flex;
@@ -132,13 +137,27 @@ main {
   color: #f0f0f0;
 }
 
-#page-text-container p {
-  margin: 1rem;
+#page-about {
+  margin: 0 1rem;
+}
+
+#section-more-help p + p,
+#section-credits p + p {
+  margin: 0 0 1rem 0;
+}
+
+.heading,
+.sub-heading {
+  margin: 1rem 0 0 0;
 }
 
 .temp-label {
   grid-column: span 1;
   text-align: right;
+}
+
+.sub-heading {
+  font-size: medium;
 }
 
 .title {
