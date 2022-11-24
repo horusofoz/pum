@@ -10,6 +10,7 @@ html {
   background-color: #2a2a2a;
   border-radius: 5px;
   color: #f0f0f0;
+  height: 85px;
   text-align: center;
 }
 
@@ -87,6 +88,7 @@ main {
 .nav-bar {
   bottom: 0;
   display: flex;
+  height: 85px;
   justify-content: space-around;
 }
 
@@ -128,7 +130,7 @@ main {
   margin: auto;
   row-gap: 1rem;
   width: 100%;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 .page a,
@@ -138,6 +140,7 @@ main {
 }
 
 #page-about {
+  height: 100%;
   margin: 0 1rem;
 }
 
@@ -178,6 +181,10 @@ main {
     padding-left: 5px;
   }
 
+  .btn {
+    height: 55px;
+  }
+
   .field {
     grid-column: span 11;
 
@@ -190,6 +197,10 @@ main {
   .nav-icon,
   .roll-icon {
     height: 32px;
+  }
+
+  .nav-bar {
+    height: 55px;
   }
 
   .page {
