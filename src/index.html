@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plot Unfolding Machine</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <main>
+    <h1 class="title">Plot Unfolding Machine</h1>
+
+    <div class="page hidden" id="page-scene">
+      <p class="field-label">Prompt</p>
+      <p class="field" id="scene-setup-prompt"></p>
+
+      <p class="field-label">Expectation</p>
+      <p class="field" id="scene-setup-expectation"></p>
+
+      <p class="field-label">Catalyst</p>
+      <p class="field" id="scene-designer-catalyst"></p>
+
+      <p class="field-label">Challenge</p>
+      <p class="field" id="scene-designer-challenge"></p>
+
+      <p class="field-label">Circumstance</p>
+      <p class="field" id="scene-designer-circumstance"></p>
+
+      <p class="field-label">Complication</p>
+      <p class="field" id="scene-designer-complication"></p>
+
+      <p class="field-label">Discovery</p>
+      <p class="field" id="scene-designer-discovery"></p>
+
+      <p class="field-label">Risk</p>
+      <p class="field" id="scene-designer-risk"></p>
+    </div>
+
+    <div class="page hidden" id="page-oracle">
+      <p class="field-label">Yes/No</p>
+      <p class="field" id="oracle-yesorno-even"></p>
+      <p class="grid-col-span-6 spacer"></p>
+
+      <p class="field-label">Likely</p>
+      <p class="field" id="oracle-yesorno-likely"></p>
+      <p class="field-label">Unlikely</p>
+      <p class="field" id="oracle-yesorno-unlikely"></p>
+
+      <p class="field-label">What</p>
+      <p class="field" id="oracle-what"></p>
+
+      <p class="field-label">Who</p>
+      <p class="field" id="oracle-who"></p>
+
+      <p class="field-label">Intent</p>
+      <p class="field" id="oracle-intent"></p>
+
+      <p class="field-label">Activity</p>
+      <p class="field" id="oracle-activity"></p>
+
+      <p class="field-label">Reason</p>
+      <p class="field" id="oracle-reason"></p>
+
+      <p class="field-label">Area</p>
+      <p class="field" id="oracle-describe-area"></p>
+      <p class="field-label">Object</p>
+      <p class="field" id="oracle-describe-object"></p>
+      <p class="field-label">Someone</p>
+      <p class="field" id="oracle-describe-someone"></p>
+
+      <p class="field-label">Ability</p>
+      <p class="field" id="oracle-kindof-ability"></p>
+      <p class="field-label">Danger</p>
+      <p class="field" id="oracle-kindof-danger"></p>
+      <p class="field-label">Enemy</p>
+      <p class="field" id="oracle-kindof-enemy"></p>
+      <p class="field-label">Item</p>
+      <p class="field" id="oracle-kindof-item"></p>
+      <p class="field-label">People</p>
+      <p class="field" id="oracle-kindof-people"></p>
+
+    </div>
+
+    <div class="page hidden" id="page-about">
+      <div class="grid-col-span-12" id="page-text-container">
+        <p>The Plot Unfolding Machine (PUM) is a system that can be layered onto any role playing
+          game to make it playable without a game master.</p>
+
+        <p>PUM is created by <a href="https://jvhouse.xyz/" target="_blank">Jeansen Vaars</a> and
+          is available to buy from <a href="https://jeansenvaars.itch.io/plot-unfolding-machine"
+            target="_blank">Itch.io</a>.
+
+        <p>Icons created by <a href="https://delapouite.com/" target="_blank">Delapouite</a>, <a href="https://lorcblog.blogspot.com/" target="_blank">Lorc</a> and <a href="http://opengameart.org/content/95-game-icons" target="_blank">Sbed</a>.</p>
+        
+        <p>Web app developed <a href="https://jeffreysmith.com.au">Jeffrey Smith</a>.</p>
+
+        <p>Basic flow</p>
+        <img src="./images/pum_how_to_dark.png" />
+
+      </div>
+
+
+    </div>
+
+    <div class="filler"></div>
+
+    <button class="btn btn-roll">
+      <img class="roll-icon" src="./images/roll.svg" alt="roll dice icon" />
+      Roll
+    </button>
+
+    <nav class="nav-bar">
+      <a href="#" class="nav-item" id="nav-item-scene">
+        <img class="nav-icon" src="./images/scene.svg" alt="scene icon" />
+        Scene
+      </a>
+      <a href="#" class="nav-item" id="nav-item-oracle">
+        <img class="nav-icon" src="./images/oracle.svg" alt="oracle icon" />
+        Oracle
+      </a>
+      <a href="#" class="nav-item" id="nav-item-about">
+        <img class="nav-icon" src="./images/help.svg" alt="about icon" />
+        About
+      </a>
+    </nav>
+
+  </main>
+
+  <script src="./js/pum.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
