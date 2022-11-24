@@ -130,7 +130,7 @@ main {
   margin: auto;
   row-gap: 1rem;
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .page a,
