@@ -141,7 +141,7 @@ main {
 
 #page-about {
   height: 100%;
-  margin: 0 1rem;
+  padding: 0 1rem;
 }
 
 #section-more-help p + p,

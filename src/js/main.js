@@ -146,11 +146,21 @@ function setActivePage(page) {
 
 }
 
+function setServiceWorker() {
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("/learn/pum-dev/service.js", { scope: "/learn/pum-dev/" })
+      .then(res => console.log("Service worker registered"))
+      .catch(err => console.log("Service worker not registered", err))
+  }
+}
+
 function start() {
   getSceneAnswers();
   getOracleAnswers();
   setActivePage("scene");
   setActiveNavItem("scene");
+  setServiceWorker();
 }
 
 start();
